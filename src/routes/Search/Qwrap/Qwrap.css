@@ -1,0 +1,14 @@
+.Qwrap{
+
+}
+.Qwrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Qwrap li{
+    margin: 10px 5px 0;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: gainsboro;
+}

@@ -1,0 +1,38 @@
+.resListWrap{
+
+}
+
+.item{
+    display: flex;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}
+.item>div:nth-of-type(1){
+    width:2rem;
+    height: 2rem;
+}
+.item>div:nth-of-type(2){
+    flex: 1;
+}
+.item>div:nth-of-type(2) h2{
+    width: 100%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item>div:nth-of-type(2) p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 1rem;
+}
+
+
+.noData{
+    margin-top: 3rem;
+    text-align: center;
+}

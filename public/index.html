@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dva Demo</title>
+    <script>
+        setRem();
+        window.addEventListener("orientationchange", setRem);
+        window.addEventListener("resize", setRem);
+
+        function setRem() {
+            var html = document.querySelector("html");
+            var width = html.getBoundingClientRect().width;
+            html.style.fontSize = width / 7.5 + "px";
+        }
+    </script>
+</head>
+<body>
+
+<div id="root"></div>
+<script type="text/javascript"
+        src="https://webapi.amap.com/maps?v
+        =1.4.8&key=3fef33e0d7b31b2988c5eb3906ca8050">
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
